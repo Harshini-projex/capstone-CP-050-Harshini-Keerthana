@@ -181,7 +181,7 @@ The file contains:
 
 **Project Team:**
 - Harshini D
-- Keerthana
+- Keerthana K L
 
 ## 🏁 Conclusion
 
