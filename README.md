@@ -1,4 +1,4 @@
-# Problem Title: TripCraft — Itinerary Scheduling and Budget Control Planner
+# TripCraft — Itinerary Scheduling and Budget Control Planner
 
 **Problem ID:** CP-050
 
