@@ -1,190 +1,225 @@
-# ✈️ TripCraft – Itinerary Scheduling and Budget Control Planner
+# Problem Title: TripCraft — Itinerary Scheduling and Budget Control Planner
 
-**Project Code:** CP-050  
-**Domain:** Travel, Transport and Logistics  
-**Project Type:** Console-Based Application
+**Problem ID:** CP-050
 
-## 📌 Project Overview
+## Team Members
 
-TripCraft is a Java-based travel itinerary and budget management application designed to make group trip planning easier and more organized.
+1. **Name:** Harshini D| USN: 1AT24CS072
+2. **Name:** Keerthana| US: 1AT24CS091
 
-When planning group trips, managing expenses and scheduling activities can become difficult. Activities may overlap, expenses may exceed the planned budget, and splitting costs among members can be confusing.
+**Track:** Java   
+**Domain:** Travel, Transport and Logistics
 
-TripCraft helps users create trips, schedule activities, detect time clashes, track actual spending, monitor budgets, and calculate individual contributions.
+---
 
-## 🎯 Objectives
+## Problem Description
 
-- Simplify group trip planning.
-- Avoid overlapping activities.
-- Track planned and actual expenses.
-- Help users stay within their trip budget.
-- Calculate per-person costs and member contributions.
-- Generate and save a day-wise travel itinerary.
+Group trips can become difficult to manage when activities overlap, expenses exceed the planned budget, and members are unsure about individual contributions.
 
-## ⭐ Features
+TripCraft is a Java-based console application that helps users organize group trips, schedule daily activities, detect timing conflicts, track expenses, and manage the overall travel budget.
 
-### 1. Create a New Trip
-- Enter trip name and destination.
-- Set trip start and end dates.
-- Enter the total trip budget.
-- Add the names of trip members.
-- Prevent duplicate member names.
+---
 
-### 2. Add Activities
-- Add activities for individual trip dates.
-- Specify activity name, date, start time, and end time.
-- Enter the planned cost.
-- Select the member responsible for payment.
-- Validate activity dates and timings.
-
-### 3. Overlapping Activity Detection
-- Automatically checks for overlapping activities on the same day.
-- Displays the conflicting activity details.
-- Prompts the user to enter a different schedule.
-
-### 4. Actual Spending Tracker
-- Record actual expenses for each activity.
-- Update spending whenever additional expenses occur.
-- Compare actual spending with the total trip budget.
-- Display the remaining budget.
-
-### 5. Day-wise Itinerary
-- Display all activities date-wise.
-- Show activity timings, planned costs, actual costs, and payment details.
-- Automatically arrange activities by date and starting time.
-- Display days without scheduled activities.
-
-### 6. Budget Analysis and Suggestions
-- Compare planned expenses with the total budget.
-- Identify whether the trip is within or over budget.
-- Allow users to remove activities that have no recorded spending.
-- Suggest additional activities based on the selected destination and remaining budget.
-
-### 7. Per-Person Cost Calculation
-- Calculate the equal expense share for each member.
-- Display the amount paid by each member.
-- Calculate the net balance.
-- Identify members who have paid extra or owe money to the group.
-
-### 8. Save Itinerary to a Text File
-- Save the complete trip itinerary.
-- Include trip information, activities, and expense summaries.
-- Store member-wise contribution details.
-- Generate a file named `TripCraft_Itinerary.txt`.
-
-## 🛠️ Technologies Used
-
-| Technology | Purpose |
-|---|---|
-| Java | Core application development |
-| Java Collections | Store trip members and activities |
-| ArrayList | Manage activities and members |
-| LocalDate | Handle trip and activity dates |
-| LocalTime | Manage activity timings |
-| DateTimeFormatter | Format time input and output |
-| File Handling | Save itinerary as a text file |
-| Scanner | Accept user input |
-
-## 📂 Project Structure
-
-```text
-
-capstone-CP-050-Harshini-Keerthana/
-│
-├── .gitignore
-├── README.md
-├── TripCraft.java
-└── TripCraft_Itinerary.txt
-
-```
-
-*Note: The `.class` files are generated after compilation, and the itinerary text file is generated when the user selects the save option.*
-
-## ⚙️ Installation and Execution
+## How to Run the Program
 
 ### Prerequisites
-- Java Development Kit (JDK 8 or above)
-- Visual Studio Code or any Java-supported IDE
-- Terminal or Command Prompt
 
-### Step 1: Clone the Repository
+- Java Development Kit (JDK) installed.
+- A terminal or command prompt.
+- VS Code or any Java-supported IDE.
 
-```bash
-git clone <https://github.com/Harshini-projex/capstone-CP-050-Harshini-Keerthana>
-```
+### Steps
 
-### Step 2: Open the Project Folder
+1. Clone or download this repository.
 
-```bash
-cd capstone-CP-050-Harshini-Keerthana
-```
+2. Open the project folder in your terminal.
 
-### Step 3: Compile the Java Program
+3. Compile the Java program:
 
 ```bash
 javac TripCraft.java
 ```
 
-### Step 4: Run the Application
+4. Execute the program:
 
 ```bash
 java TripCraft
 ```
 
-## 🖥️ Application Menu
+5. Follow the menu displayed in the terminal to create a trip and manage its activities.
 
-The application provides the following menu options:
+---
+
+## Project Structure
 
 ```text
-================================================================================
-                              TRIPCRAFT
-                    ITINERARY & BUDGET PLANNER
-================================================================================
-  1. Create New Trip
-  2. Add Activity
-  3. Update Actual Spending
-  4. View Day-wise Itinerary
-  5. Budget Analysis & Suggestions
-  6. Save Itinerary to File
-  7. Exit
-================================================================================
+capstone-CP-050-Harshini-Keerthana/
+│
+├── TripCraft.java
+├── TripCraft_Itinerary.txt
+├── README.md
+└── .gitignore
 ```
 
-Users can select an option by entering its corresponding number.
+**File Description:**
 
-## 📊 Sample Supported Destinations
+- `TripCraft.java` – Contains the complete Java implementation, including trip creation, activity scheduling, budget calculations, and file handling.
+- `TripCraft_Itinerary.txt` – Stores the exported trip itinerary.
+- `README.md` – Contains project information and execution instructions.
+- `.gitignore` – Specifies files Git should ignore.
 
-TripCraft currently provides predefined activity suggestions for four destinations.
+---
 
-| Destination | Sample Activities |
-|---|---|
-| Goa | Dolphin Boat Ride, Fort Aguada Visit, Water Sports |
-| Manali | Solang Valley Adventure, Hadimba Temple, River Rafting |
-| Jaipur | Amber Fort, City Palace, Food Walk |
-| Mysuru | Mysore Palace, Chamundi Hills, Brindavan Gardens |
+## Features Implemented
 
-## 📁 Output
+1. **Create a Trip**
+   - Enter trip name, destination, start date, and end date.
+   - Add multiple travellers.
+   - Set the total trip budget.
 
-After selecting the save option, the application generates:
+2. **Add Activities**
+   - Add activities for specific dates.
+   - Enter activity name, start time, end time, and planned cost.
+   - Select the member responsible for payment.
 
-`TripCraft_Itinerary.txt`
+3. **Detect Overlapping Activities**
+   - Check activity timings on the same day.
+   - Prevent scheduling conflicts.
+   - Allow activities that are scheduled back-to-back.
 
-The file contains:
-- Trip details and destination.
-- Travel dates and member information.
-- Day-wise activity schedule.
-- Planned and actual expenses.
-- Remaining budget.
-- Per-person contribution and net balance.
+4. **Track Planned and Actual Expenses**
+   - Record actual spending for activities.
+   - Compare estimated costs with actual expenses.
+   - Display the remaining trip budget.
+   - Notify users when spending exceeds the budget.
 
-## 👥 Contributors
+5. **Day-wise Itinerary and Per-person Cost**
+   - Display activities date-wise and time-wise.
+   - Calculate total planned and actual expenses.
+   - Calculate equal per-person contributions.
+   - Display individual member payment balances.
 
-**Project Team:**
-- Harshini D
-- Keerthana K L
+### Stretch Features 
 
-## 🏁 Conclusion
+- Save the complete itinerary to a text file for sharing.
+- Suggest activities based on predefined destination recommendations.
+- Identify planned activities that can be removed to bring the estimated cost within budget.
 
-TripCraft provides a simple and practical solution for managing group travel schedules and expenses. By combining itinerary scheduling, overlapping activity detection, budget monitoring, and expense tracking, it helps users plan trips more efficiently and avoid common planning difficulties.
+---
 
-**Plan Smart. Travel Better!** ✈️
+## Java Concepts Used
+
+- **Object-Oriented Programming:** Classes, objects, constructors, and encapsulation of trip-related data.
+- **ArrayList:** Dynamically stores trip members and activities.
+- **LinkedHashMap:** Stores predefined destination-based activity suggestions.
+- **LocalDate and LocalTime:** Handle trip dates and activity timings.
+- **DateTimeFormatter:** Formats date and time values.
+- **Comparator:** Sorts activities by date and start time.
+- **Exception Handling:** Handles invalid inputs and file-related errors.
+- **File Handling:** Uses FileWriter and PrintWriter to save itineraries.
+- **Method Overloading:** Supports displaying the itinerary in the console and writing it to a file.
+
+---
+
+## Sample Run
+
+### Input:
+
+```text
+========== TRIPCRAFT ==========
+1. Create New Trip
+2. Add Activity
+3. Update Actual Spending
+4. View Day-wise Itinerary
+5. Budget Analysis and Suggestions
+6. Save Itinerary to File
+7. Exit
+
+Enter your choice: 1
+
+Enter Trip Name: Goa Vacation
+Select Destination: Goa
+Enter Start Date: 20-12-2026
+Enter End Date: 22-12-2026
+Enter Total Budget: 20000
+
+Enter Number of Members: 4
+
+Enter Member Names:
+1. Harshini
+2. Keerthana
+3. Ali
+4. Varsha
+
+Trip created successfully!
+```
+
+### Output:
+
+```text
+========== TRIPCRAFT ==========
+Trip Name   : Goa Vacation
+Destination : Goa
+Members     : 4
+Total Budget: Rs. 20000
+
+Trip created successfully!
+
+Enter your choice: 2
+
+Enter Activity Name: Water Sports
+Enter Activity Date: 20-12-2026
+Start Time: 10:00 AM
+End Time: 12:00 PM
+Planned Cost: 1200
+
+Select Member Responsible for Payment: Harshini
+
+Activity added successfully!
+```
+
+### Overlapping Activity Detection
+
+```text
+Enter Activity Name: Beach Visit
+Enter Activity Date: 20-12-2026
+Start Time: 11:00 AM
+End Time: 01:00 PM
+
+Activity overlaps with an existing activity!
+
+Existing Activity: Water Sports
+Please enter a different time.
+```
+
+### Budget Summary
+
+```text
+========== BUDGET SUMMARY ==========
+
+Total Budget       : Rs. 20000
+Planned Expenses   : Rs. 2600
+Actual Expenses    : Rs. 2900
+Remaining Budget   : Rs. 17100
+
+Per Person Actual Cost: Rs. 725
+
+====================================
+```
+
+*Note: The above is an illustrative sample demonstration. Actual console formatting and values depend on the information entered during execution.*
+
+---
+
+## Expected Outcome
+
+TripCraft provides a simple and organized way to manage group travel plans through a Java console application.
+
+It helps users:
+- Avoid scheduling conflicts.
+- Monitor travel expenses.
+- Stay within the planned budget.
+- Understand individual contributions.
+- Maintain and share a structured travel itinerary.
+
+---
