@@ -5,7 +5,7 @@
 ## Team Members
 
 1. **Name:** Harshini D| USN: 1AT24CS072
-2. **Name:** Keerthana| USN: 1AT24CS091
+2. **Name:** Keerthana K L| USN: 1AT24CS091
 
 **Track:** Java   
 **Domain:** Travel, Transport and Logistics
